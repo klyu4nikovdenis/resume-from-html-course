@@ -7,21 +7,31 @@
   <meta name="keywords" content="resume, front-end, web-developer">
   <meta name="description" content="Начинающий веб-разработчик"> <!--это то что показыается, когда вылазиет краткое
   описание сайта например в Яндекс -->
+  <link rel="stylesheet" href="styles.css">
   <title>Resume</title> 
 </head>
 <body>
-  <p><img src="me.jpg" alt="avatar"></p>
+  <div class="container">
+  <div class="info">
+  <img src="me.jpg" alt="avatar" class="avatar">
+  <div class="info-text">
   <h1>Ключников Денис</h1>
-  <p>Я начинающий <strong>веб-разработчик</strong></p>
-  <p>Технологии: <strong><em>HTML, CSS, SCSS, JavaScript, React, Redux</em></strong></p>
+  <p>Я начинающий <span>веб-разработчик</span></p>
+  <p>Технологии: <span>HTML, CSS, SCSS, JavaScript, React, Redux</span></p>
   <p>Список социальный сетей</p>
   <a href="https://vk.com/klyu4nikovdenis" target="_blank">VK</a> | <a href="https://telegram.org/@spudi19" target="_blank">Telegram</a>
-<ol><strong>Мои хобби</strong>
+</div>
+</div>
+<div class="card">
+<div class="card1 block">
+  <h3>Мои хобби</h3>
+  <ol class="list">
   <li>Футбол</li>
   <li>Настольные игры</li>
   <li>Кроссфит</li>
 </ol>
-
+</div>
+<div class="card2 block table ">
 <h3>Опыт работы</h3>
 <table>
   <thead>
@@ -49,23 +59,40 @@
     </tr>
   </tbody>
 </table>
-<h3>Связаться со мной</h3>
-<form>
-  <div>
-   <label for="text">Ваше имя:</label>
-   <input type="text" id="text" placeholder="Введите имя">
+</div>
+
+<div class="card3 block">
+  <h3>Пройденные курсы, литература</h3>
+  <ul class="list"><li><a href="https://vladilen.ru/junior" target="_blank">JavaScript Junior Front-End Developer</a></li>
+    <li><a href="#" target="_blank">Курс HTML, CSS</a></li>
+    <li><a href="https://learn.javascript.ru/" target="_blank">Современный учебник JavaScript</a></ul></li>
+</div>
+
+<div class="card4 block">
+
+<form class="form">
+  <h3>Связаться со мной</h3>
+  <div class="form-row">
+    <div class="form-group">
+      <label for="text">Ваше имя:</label>
+      <input type="text" id="text" placeholder="Введите имя">
+     </div>
+     <div class="form-group">
+       <label for="email">Ваш email</label>
+       <input type="email" id="email" placeholder="Введите email">
+     </div>   
   </div>
-  <div>
-    <label for="email">Ваш email</label>
-    <input type="email" id="email" placeholder="Введите email">
-  </div>
-  <div>
-    <label for="message">Ваше сообщение</label> <br>
+
+  <div class="form-group">
+    <label for="message">Ваше сообщение</label>
     <textarea id="message" cols="20" rows="5"></textarea>
   </div>
   <div>
-    <button type="submit">Отправить!</button>
+    <button type="submit" class="btn">Отправить!</button>
   </div>
 </form>
+</div>
+</div>
+</div>
 </body>
 </html>
